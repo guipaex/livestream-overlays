@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro</title>
+  </head>
+  <body>
+    <iframe
+      id="chat-box"
+      src="https://streamlabs.com/widgets/chat-box/v1/F0B7269269302269AB1D"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      id="livePix"
+      src="https://widget.livepix.gg/embed/9c9eceb7-7442-4f5c-bd31-35739dd80e6b"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      id="streamElements"
+      src="https://streamelements.com/overlay/681f5f3ff94060b8912eaa79/GfqFbU15X8UFQaZ5Emm0z4IQtXfAuHNVntayCx3DiacMzB4T"
+      frameborder="0"
+    ></iframe>
+  </body>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      /* position: relative; */
+      overflow: hidden;
+    }
+    #streamElements {
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+    #livePix {
+      width: 800px;
+      height: 600px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 11;
+    }
+    #chat-box {
+      position: absolute;
+      left: 2rem;
+      bottom: 2rem;
+      width: 32vw;
+      height: 80vh;
+      z-index: 10;
+    }
+  </style>
+</html>

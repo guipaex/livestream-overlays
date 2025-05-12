@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro</title>
+  </head>
+  <body>
+    <iframe
+      id="livePix"
+      src="https://widget.livepix.gg/embed/9c9eceb7-7442-4f5c-bd31-35739dd80e6b"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      id="streamElements"
+      src="https://streamelements.com/overlay/60d2349c2c41dabb1e98013d/GfqFbU15X8UFQaZ5Emm0z4IQtXfAuHNVntayCx3DiacMzB4T"
+      frameborder="0"
+    ></iframe>
+    <iframe
+      id="youtube"
+      src="https://streamelements.com/overlay/66ddd9d9c2786fa2658b18f1/LDNmoq6xup43hOrDA7fTnDKU8Y28mJCQGT1wskvYYxTvJ3hn"
+      frameborder="0"
+    ></iframe>
+  </body>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      /* position: relative; */
+      overflow: hidden;
+    }
+    #streamElements {
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+    #livePix,
+    #youtube {
+      width: 800px;
+      height: 600px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      z-index: 11;
+    }
+  </style>
+</html>
