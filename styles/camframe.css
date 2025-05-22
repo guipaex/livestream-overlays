@@ -1,0 +1,117 @@
+ @import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+ @import './global.css';
+
+ html{
+    filter: drop-shadow(0 8px 8px black);
+ }
+    body {
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #camframe {
+      width: 97vw;
+      aspect-ratio: 16/9;
+      border-radius: 2.5rem;
+      border: 5px solid var(--eletric);
+      position: relative;
+      overflow: hidden;
+    }
+    #logo{
+        position: absolute;
+        left:-1.75rem;
+        bottom: -1rem;
+    }
+    #social {
+        position: absolute;
+        left: 140px;
+        bottom: 0.25rem;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 600;
+        font-size: 1.75rem;
+        color: var(--white);
+    }
+    #logos{
+        position: relative;
+        aspect-ratio: 1;
+        height: 3.25rem;
+        padding: 0;
+        display:flex;
+        align-items: center;
+    }
+    .icon {
+        filter: var(--filter-toWhite);
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(5rem);
+      transition: opacity 0.5s, transform 0.5s;
+      z-index: 1;
+    }
+    .icon.active {
+      opacity: 1;
+      pointer-events: auto;
+      animation: slideUpIn 0.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+      z-index: 2;
+    }
+    .icon.out {
+      opacity: 0;
+      pointer-events: none;
+      animation: slideUpOut 0.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
+      z-index: 1;
+    }
+
+    #bar-container {
+      width: 100vw;
+      height: 20vh;
+      margin-top: 1rem;
+      position: relative;
+      overflow: hidden;
+      border-radius: 1rem;
+      border: 1px solid grey;
+      background: url("https://cdn.streamelements.com/uploads/01jtxt3hkzmca0rwpf0s7a7vzb.mp4");
+    }
+    #bg-container {
+      width: 100%;
+    }
+
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(5rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes slideUpIn {
+      from {
+        opacity: 0;
+        transform: translateY(5rem);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    @keyframes slideUpOut {
+      from {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      to {
+        opacity: 0;
+        transform: translateY(-5rem);
+      }
+    }

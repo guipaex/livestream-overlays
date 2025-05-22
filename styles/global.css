@@ -1,0 +1,13 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Sora", sans-serif;
+      font-weight: 600;
+    }
+
+:root {
+    --white: #f0f0f0;
+    --filter-toWhite: brightness(0) saturate(100%) invert(98%) sepia(12%) saturate(636%) hue-rotate(184deg) brightness(119%) contrast(88%);
+    --eletric:#D0FF00;
+}
